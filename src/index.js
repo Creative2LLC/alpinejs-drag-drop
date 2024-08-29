@@ -1,7 +1,4 @@
 export default function (Alpine) {
-  Alpine.directive('uppercase', el => {
-    el.textContent = el.textContent.toUpperCase();
-  });
 
   Alpine.directive('drag', (el, { value, modifiers, expression }, { evaluate, evaluateLater }) => {
     if (value === 'list') {
@@ -13,7 +10,7 @@ export default function (Alpine) {
         'x-data'() {
           return {
             init() {
-              console.log('init');
+
             },
             __isDragging: false,
           }
@@ -26,7 +23,7 @@ export default function (Alpine) {
           }
 
           this.__isDragging = true;
-          console.log('isDragging', this.__isDragging);
+          // console.log('isDragging', this.__isDragging);
 
         },
         'x-on:dragend'(event) {
@@ -37,7 +34,7 @@ export default function (Alpine) {
           }
 
           this.__isDragging = false;
-          console.log('dragleave event', this.__isDragging);
+          // console.log('dragleave event', this.__isDragging);
         }
       });
     }
@@ -58,8 +55,6 @@ export default function (Alpine) {
         if (expression) {
           dragId = expression;
         }
-
-        console.log('dragstart event', dragId); // Log the item being dragged
 
         let effect = 'copy';
 
@@ -104,18 +99,18 @@ export default function (Alpine) {
         'x-data'() {
           return {
             init() {
-              console.log('init drop');
+              // console.log('init drop');
             },
             __isEntered: false,
           }
         },
         'x-on:dragenter'(event) {
           this.__isEntered = true;
-          console.log('dragenter event', this.__isEntered);
+          // console.log('dragenter event', this.__isEntered);
         },
         'x-on:dragleave'(event) {
           this.__isEntered = false;
-          console.log('dragleave event', this.__isEntered);
+          // console.log('dragleave event', this.__isEntered);
         },
         'x-on:drop'(event) {
 
@@ -128,7 +123,7 @@ export default function (Alpine) {
           const jsonData = event.dataTransfer.getData('application/json');
           const data = JSON.parse(jsonData);
 
-          console.log('drop event', data);
+          // console.log('drop event', data);
 
           // let the handle match the effect
           let handle = handleCopy;
@@ -148,11 +143,8 @@ export default function (Alpine) {
 
           let item = '';
 
-          // Set target to the element
-          let target = el;
-
           // Call the handler with the deserialized data and the drop target
-          handle(item, target, data);
+          handle(item, el, data);
 
         }
       });
