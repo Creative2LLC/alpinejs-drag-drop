@@ -1,15 +1,15 @@
 {
-  "name": "PLUGIN",
+  "name": "alpine-dragdrop",
   "version": "1.0.0",
-  "description": "DESCRIPTION",
+  "description": "AlpineJS Plugin for easily adding drag and drop capabilities",
   "keywords": [
     "Alpine",
     "Alpine JS",
     "Alpine JS Plugin",
     "Alpine JS Plugins"
   ],
-  "module": "dist/FILE.esm.js",
-  "unpkg": "dist/FILE.min.js",
+  "module": "dist/dragdrop.esm.js",
+  "unpkg": "dist/dragdrop.min.js",
   "scripts": {
     "build": "node scripts/build.js"
   },

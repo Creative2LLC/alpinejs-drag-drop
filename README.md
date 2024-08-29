@@ -1,5 +1,3 @@
-**--- DELETE START ---**
-
 # Alpine JS Plugin Template
 
 This is a template repository to help developers quickly build Alpine JS
@@ -26,18 +24,18 @@ this file.
 
 ## Things to Change
 
-- Find and replace "PLUGIN" with the name of your plugin
-- Find and replace "FILE" with the name of your compiled file
-- Find and replace "DESCRIPTION" with a description of your plugin
+- Find and replace "alpine-dragdrop" with the name of your plugin
+- Find and replace "dragdrop" with the name of your compiled file
+- Find and replace "AlpineJS Plugin for easily adding drag and drop capabilities" with a description of your plugin
 - Uncomment "index.html" in the `.gitignore` file
 
 🚨 Make sure find and replace is case sensitive
 
 If you were creating a plugin called "Alpine JS CSV" you could do the following:
 
-- "PLUGIN" to "alpinejs-csv"
-- "FILE" to "csv"
-- "DESCRIPTION" to "Transform data into a CSV with Alpine JS 📈"
+- "alpine-dragdrop" to "alpinejs-csv"
+- "dragdrop" to "csv"
+- "AlpineJS Plugin for easily adding drag and drop capabilities" to "Transform data into a CSV with Alpine JS 📈"
 
 ---
 
@@ -50,16 +48,16 @@ to you.
 
 **--- DELETE END ---**
 
-# PLUGIN
+# alpine-dragdrop
 
-DESCRIPTION
+AlpineJS Plugin for easily adding drag and drop capabilities
 
 ## Install
 
 ### With a CDN
 
 ```html
-<script defer src="https://unpkg.com/PLUGIN@latest/dist/FILE.min.js"></script>
+<script defer src="https://unpkg.com/alpine-dragdrop@latest/dist/dragdrop.min.js"></script>
 
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 ```
@@ -67,16 +65,16 @@ DESCRIPTION
 ### With a Package Manager
 
 ```shell
-yarn add -D PLUGIN
+yarn add -D alpine-dragdrop
 
-npm install -D PLUGIN
+npm install -D alpine-dragdrop
 ```
 
 ```js
 import Alpine from 'alpinejs'
-import FILE from 'PLUGIN'
+import dragdrop from 'alpine-dragdrop'
 
-Alpine.plugin(FILE)
+Alpine.plugin(dragdrop)
 
 Alpine.start()
 ```
@@ -87,7 +85,7 @@ Examples of how the plugin works.
 
 ## Stats
 
-![](https://img.shields.io/bundlephobia/min/PLUGIN)
-![](https://img.shields.io/npm/v/PLUGIN)
-![](https://img.shields.io/npm/dt/PLUGIN)
-![](https://img.shields.io/github/license/markmead/PLUGIN)
+![](https://img.shields.io/bundlephobia/min/alpine-dragdrop)
+![](https://img.shields.io/npm/v/alpine-dragdrop)
+![](https://img.shields.io/npm/dt/alpine-dragdrop)
+![](https://img.shields.io/github/license/markmead/alpine-dragdrop)
