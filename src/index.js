@@ -3,8 +3,6 @@ export default function (Alpine) {
   Alpine.directive('drag', (el, { value, modifiers, expression }, { evaluate, evaluateLater }) => {
     if (value === 'list') {
 
-      console.log('list directive', modifiers);
-
       //bind the data/magics to the element
       Alpine.bind(el, {
         'x-data'() {
