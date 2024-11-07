@@ -1,6 +1,6 @@
 {
   "name": "alpine-dragdrop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AlpineJS Plugin for easily adding drag and drop capabilities",
   "keywords": [
     "AlpineJS",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Creative2LLC/alpinejs-drag-drop.git"
+    "url": "https://github.com/Creative2LLC/alpinejs-drag-drop.git"
   },
   "devDependencies": {
     "esbuild": "^0.21.4"
