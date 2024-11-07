@@ -84,7 +84,6 @@ export default function (Alpine) {
 
     return {
       get isDragging() {
-        console.log('isDragging', $data.__isDragging);
         return $data.__isDragging;
       },
     }
@@ -202,8 +201,6 @@ function handleCopy(item, target, data) {
   //get the data object from the scope object
   item = document.querySelector(`[data-drag-id='${data['id']}']`);
 
-  console.log('item', item);
-
   let copy = item.cloneNode(true);
   copy.setAttribute('data-drag-id', Math.random().toString(36).substr(2, 9));
 
@@ -212,7 +209,6 @@ function handleCopy(item, target, data) {
 }
 
 function handleLink(item, target, data) {
-  console.log('link');
 
   //TODO
 }
