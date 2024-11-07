@@ -1,6 +1,6 @@
 {
   "name": "alpine-dragdrop",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "AlpineJS Plugin for easily adding drag and drop capabilities",
   "keywords": [
     "AlpineJS",
